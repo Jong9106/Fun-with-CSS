@@ -1,0 +1,53 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    width: 280px;
+    height: 430px;
+    border-radius: 1rem;
+    border: 2px solid rgb(109, 109, 109);
+    background-color: #f7f7f7;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem;
+    margin: 2rem 1.5rem;
+}
+
+.icon {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.i-html,
+.i-css,
+.i-js {
+    background: url('https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/2/d416199ca6ecdbd0f8a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220603%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220603T000343Z&X-Amz-Expires=345600&X-Amz-SignedHeaders=host&X-Amz-Signature=62a85d79535ca4c1d7b236096748bce53055aa95102adcd4d36945152129e5a7');
+    background-position: -1.4rem 0;
+    background-size: 50rem;
+    background-repeat: no-repeat;
+}
+
+.i-html {
+    background-position-x: -1.4rem;
+}
+
+.i-css {
+    background-position-x: -18.2rem;
+}
+
+.i-js {
+    background-position-x: -35rem;
+}

@@ -1,0 +1,79 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.toggle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle-label:hover {
+    cursor: pointer;
+}
+
+  label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    display: none;
+}
+
+.toggle-inner {
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 2px solid gray;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 25px;
+    background-color: rgb(228, 226, 226);
+    padding: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-inner::before {
+    content: "YES";
+}
+
+.toggle-inner::after {
+    content: "NO";
+}
+
+.toggle-switch {
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    align-self: center;
+    position: absolute;
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
+}
+
+.toggle-cb:checked ~ label .toggle-switch {
+    transform: translateX(120%);
+}
+
+.toggle-cb:checked ~ label .toggle-inner {
+    color: white;
+    background-color: red;
+}
